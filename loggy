@@ -1,0 +1,10 @@
+#!/Users/dh/.rvm/rubies/ruby-1.9.3-p362/bin/ruby -w
+
+magia = %x[git log --pretty=oneline --no-merges --author=DrummerHead --since='yesterday']
+
+unless magia.empty?
+  magia.gsub!(/^\w* /, "").gsub!(/\n/, "; ")
+  puts magia
+else
+  puts "Gotta worky work!"
+end
