@@ -1,4 +1,4 @@
-#!/Users/dh/.rvm/rubies/ruby-1.9.3-p362/bin/ruby -w
+#!/usr/bin/env ruby  
 
 magia = %x[git log --pretty=oneline --no-merges --author=DrummerHead --since='yesterday']
 
